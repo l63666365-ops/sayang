@@ -390,6 +390,12 @@
 </div>
 
 <script>
+    function bukaKamera(event) {
+    if (event) event.preventDefault(); // Nahan biar nggak refresh halaman
+    // Samakan id-nya dengan yang ada di HTML kamu 
+    document.getElementById('taskImageInput').click();
+    }
+    
     function showAlert(title, msg) {
         document.getElementById('alertTitle').innerText = title;
         document.getElementById('alertMsg').innerText = msg;
